@@ -3,11 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Aula02 - menu hamburguer</title>
    
    <style>
         .navbar {
             background-color: black;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
         }
         .logo { 
             color: white;
@@ -23,7 +27,7 @@
     }
 
     .nav-links a {
-        color: white;
+        color: rgb(255, 0, 132);
         text-decoration: none;
         font-size: 20px;
     }
@@ -71,6 +75,7 @@
     
     <nav class="navbar">
         <div class="logo">Meu site</div>
+
         <!-- Botão hamburguer responsividade -->
          <button class="hamburguer" id="hamburguer-btn">
             &#9776; <!-- Simbolo do icone menu -->
@@ -79,12 +84,38 @@
          <!-- Lista de itens do menu -->
           <ul class="nav-links" id="nav-links">
             <li>
-                <a href="#">inicio</a>
-                <a href="#">inicio</a>
-                <a href="#">inicio</a>
-                <a href="#">inicio</a>
+                <a href="#">Inicio</a>
+            </li>
+            <li>
+                <a href="#">Sobre</a>
+            </li>
+            <li>
+                <a href="#">Serviços</a>
+            </li>
+            <li>
+                <a href="#">Contato</a>
             </li>
           </ul>
     </nav>
+
+    <div style="padding: 20px;">
+        <h1>Conteudo da pagina</h1>
+        <p>Redimensione a janela do navegador para ver o menu </p>
+    </div>
+
+    <a href="" style="text-decoration: none; color: red;"> qualquer coisa</a>
+
+    <script>
+
+        // SELECIONA OS ELEMENTOS DO HTML
+        const hamburguerBtn = document.getElementById('hamburguer-btn');
+        const navlinks = document.getElementById('nav-links');
+
+        // ADICIONA UM EVENTO AO BOTÃO DE CLICK 
+
+        hamburguerBtn.addEventListener('click' , ())
+       
+    </script>
+
 </body>
 </html>
