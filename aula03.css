@@ -66,3 +66,31 @@ body{
         transform: translateX(0);
     } 
 }
+
+.carousel-indicators{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.indicator {
+    width: 12px;
+    height: 12px;
+    border-radius:50%;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.indicator.nth-child(1){
+    anomation-delay: 0s;
+}
+
+.indicator.nth-child(2){
+    anomation-delay: 5s;
+}
+
+.indicator.nth-child(3){
+    anomation-delay: 0s;
+}
