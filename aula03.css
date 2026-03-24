@@ -24,7 +24,7 @@ body{
 
 .carousel-slides{
     display: flex;
-    width: 30%;
+    width: 300%;
     height: 100%;
     animation: slide 15s infinite;
 }
@@ -59,7 +59,7 @@ body{
     33%, 63% {
         transform: translateX(-33.33%);
     } 
-    66%%, 96% {
+    66%, 96% {
         transform: translateX(-66.66%);
     } 
     100%{
@@ -67,7 +67,7 @@ body{
     } 
 }
 
-.carousel-indicators{
+.carousel-indicator{
     position: absolute;
     bottom: 20px;
     left: 50%;
@@ -83,14 +83,71 @@ body{
     background: rgba(255, 255, 255, 0.5);
 }
 
-.indicator.nth-child(1){
-    anomation-delay: 0s;
+.indicator:nth-child(1){
+    animation-delay: 0s;
 }
 
-.indicator.nth-child(2){
-    anomation-delay: 5s;
+.indicator:nth-child(2){
+    animation-delay: 5s;
 }
 
-.indicator.nth-child(3){
-    anomation-delay: 0s;
+.indicator:nth-child(3){
+    animation-delay: 0s;
+}
+
+@keyframes indicator {
+    0%, 30%, 100% {
+        background: rgba(255, 255, 255, 0.5);
+    }
+    33%, 63% {
+        background: white;
+    }
+    66%, 96% {
+        background:rgba(255, 255, 255, 0.5);
+    }
+}
+
+.indicator:nth-child(2) {
+    animation: indicator2 15s infinite;
+}
+.indicator:nth-child(3) {
+    animation: indicator3 15s infinite;
+}
+
+@keyframes indicator2 {
+    0%, 30%, 100% {
+        background: rgba(255, 255, 255, 0.5);
+    }
+    33%, 63% {
+        background: white;
+    }
+    66%, 96% {
+        background:rgba(255, 255, 255, 0.5);
+    }
+}
+
+.indicator:nth-child(2) {
+    animation: indicator2 15s infinite;
+}
+.indicator:nth-child(3) {
+    animation: indicator3 15s infinite;
+}
+
+@keyframes indicator3 {
+    0%, 30%, 100% {
+        background: rgba(255, 255, 255, 0.5);
+    }
+    33%, 63% {
+        background: white;
+    }
+    66%, 96% {
+        background:rgba(255, 255, 255, 0.5);
+    }
+}
+
+.indicator:nth-child(2) {
+    animation: indicator2 15s infinite;
+}
+.indicator:nth-child(3) {
+    animation: indicator3 15s infinite;
 }
